@@ -10,8 +10,10 @@
     <h1>Leaderboard</h1>
     <section class="container">
       <section class="left-container">
-        <h2>Recent scores</h2>
-        <input type="button" value="Refresh" />
+        <label for="refresh">
+          <h2>Recent scores</h2>
+        </label>
+        <input type="button" value="Refresh" name="refresh" />
         <ul>
           <li>Name: 100</li>
           <li>Name: 20</li>
@@ -25,7 +27,9 @@
       <section class="right-container">
         <h2>Add your score</h2>
         <input type="text" placeholder="Your name" />
+        <br />
         <input type="text" placeholder="Your score" />
+        <br />
         <button type="submit">Submit</button>
       </section>
     </section>
