@@ -40,9 +40,10 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li>HTML</li>
+    <li>HTML 5</li>
+    <li>CSS 3</li>
     <li>JavaScript</li>
-    <li>CSS</li>
+    <li>Webpack 5</li>
     </ul>
 </details>
 
@@ -60,7 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://billymohajeri.github.io/Awesome-Books-With-ES6/)
+- [Live Demo Link](https://billymohajeri.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,6 +73,8 @@ To get a local copy up and running, follow these steps:
 
 ```sh
   git clone git@github.com:billymohajeri/Leaderboard.git
+  npm run build
+  npm start
 ```
 
 ### Prerequisites
@@ -164,10 +167,6 @@ Example:
 - GitHub: [@BillyMohajeri](https://github.com/billymohajeri)
 - Twitter: [@BillyMohajeri](https://twitter.com/BillyMohajeri)
 - LinkedIn: [@BillyMohajeri](https://www.linkedin.com/in/billymohajeri)
-
-👤 **Fahimullah Tanvir**
-
-- GitHub: [@Fahim-Khan-P](https://github.com/Fahim-Khan-P)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
