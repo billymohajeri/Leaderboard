@@ -5,7 +5,7 @@
   <img src="./murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-<h3><b>Awesome books</b></h3>
+<h3><b>Leaderboard</b></h3>
 
 </div>
 
@@ -29,9 +29,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Books <a name="about-project"></a>
+# 📖 Leaderboard <a name="about-project"></a>
 
-**Awesome Books** In this project, we made a basic website that allows users to add/remove books from a list. we achieved that by using JavaScript classes. we also dynamically modified the DOM and added basic events.
+**Leaderboard** The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,7 +71,7 @@
 To get a local copy up and running, follow these steps:
 
 ```sh
-  git clone git@github.com:billymohajeri/awesome-books.git
+  git clone git@github.com:billymohajeri/Leaderboard.git
 ```
 
 ### Prerequisites
