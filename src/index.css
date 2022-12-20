@@ -1,0 +1,89 @@
+body {
+  font-family: 'Comic Neue', cursive;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin: 10rem 2rem 2rem 3rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-container {
+  min-width: 350px;
+  margin-left: 7rem;
+}
+
+.right-container {
+  margin-right: 10rem;
+}
+
+label {
+  display: inline-block;
+}
+
+input,
+button {
+  font-weight: bold;
+}
+
+button {
+  float: right;
+}
+
+input[type='text'] {
+  width: 95%;
+  height: 30px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+li:nth-of-type(even) {
+  background-color: #ddd;
+}
+
+button,
+input[type='button'] {
+  box-shadow: rgba(0, 0, 0, 1) 5px 5px;
+  margin: 0 0.5rem;
+  height: 30px;
+  font-size: 1rem;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+}
+
+button:hover,
+input[type='button']:hover {
+  box-shadow: none;
+}
+
+button:active,
+input[type='button']:active {
+  transform: scale(1.1);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  width: 100%;
+  border: black 2px solid;
+  border-radius: 1%;
+  margin-top: 5%;
+  list-style: none;
+  padding: 0;
+}

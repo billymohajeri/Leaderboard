@@ -40,9 +40,10 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li>HTML</li>
+    <li>HTML 5</li>
+    <li>CSS 3</li>
     <li>JavaScript</li>
-    <li>CSS</li>
+    <li>Webpack</li>
     </ul>
 </details>
 
