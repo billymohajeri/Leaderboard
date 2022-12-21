@@ -116,7 +116,27 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\r\n\r\n// const refreshFunc= fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EeYWP4zCOnVuHLR8pvoH/scores'), {\r\n//       method: 'GET',\r\n//       headers: {\r\n//         'Content-Type': 'application/json',\r\n//       },\r\n//         body: JSON.stringify(data)\r\n//     });\r\n\r\nasync function getResponse() {\r\n    console.log('tst');\r\n  const response = await fetch(\r\n    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EeYWP4zCOnVuHLR8pvoH/scores',\r\n    {\r\n      method: 'GET',\r\n      headers: {\r\n        'Content-type': 'application/json; charset=UTF-8',\r\n      },\r\n    }\r\n  );\r\n  const data = await response.json();\r\n  console.log('dataaaaaaaaa: ', data);\r\n}\r\n\r\n// const refreshBtn = document.getElementById('refresh');\r\n\r\nrefreshBtn.addEventListener('click', () => {\r\n  //   let result = refreshFunc();\r\n  //   makeList(result);\r\n  getResponse();\r\n});\r\n\r\n// const makeList=aync()=>{\r\n//     let a=await refreshFunc();\r\n//     console.log(a);\r\n// }\r\n\n\n//# sourceURL=webpack://Leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _modules_refresh_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/refresh.js */ \"./src/modules/refresh.js\");\n/* harmony import */ var _modules_add_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/add.js */ \"./src/modules/add.js\");\n\r\n\r\n\r\n\r\nwindow.addEventListener('load', () => {\r\n  (0,_modules_refresh_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n});\r\n\r\nconst refreshBtn = document.getElementById('refresh');\r\nrefreshBtn.addEventListener('click', () => {\r\n  (0,_modules_refresh_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n});\r\n\r\nconst submitBtn = document.getElementById('submit');\r\nsubmitBtn.addEventListener('click', (e) => {\r\n  const textBoxes = document.getElementsByClassName('input-text');\r\n  const user = textBoxes[0].value;\r\n  const score = parseInt(textBoxes[1].value, 10);\r\n  textBoxes[0].value = '';\r\n  textBoxes[1].value = '';\r\n  const textBoxesHaveValue = user && score;\r\n  if (textBoxesHaveValue) {\r\n    (0,_modules_add_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(user, score);\r\n  }\r\n  e.preventDefault();\r\n});\r\n\n\n//# sourceURL=webpack://Leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/add.js":
+/*!****************************!*\
+  !*** ./src/modules/add.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst addFunc = async (usr, scr) => {\r\n  const response = await fetch(\r\n    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EeYWP4zCOnVuHLR8pvoH/scores',\r\n    {\r\n      method: 'POST',\r\n      body: JSON.stringify({\r\n        user: usr,\r\n        score: scr,\r\n      }),\r\n      headers: {\r\n        'Content-type': 'application/json; charset=UTF-8',\r\n      },\r\n    },\r\n  );\r\n  const data = await response.json();\r\n  return data;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addFunc);\r\n\n\n//# sourceURL=webpack://Leaderboard/./src/modules/add.js?");
+
+/***/ }),
+
+/***/ "./src/modules/refresh.js":
+/*!********************************!*\
+  !*** ./src/modules/refresh.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst refreshFunc = async () => {\r\n  const response = await fetch(\r\n    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EeYWP4zCOnVuHLR8pvoH/scores',\r\n    {\r\n      method: 'GET',\r\n      headers: {\r\n        'Content-type': 'application/json; charset=UTF-8',\r\n      },\r\n    },\r\n  );\r\n  const data = await response.json();\r\n\r\n  //   Sorting the result based on the score\r\n  data.result.sort((a, b) => b.score - a.score);\r\n\r\n  const ul = document.getElementById('list-ul');\r\n  ul.innerHTML = '';\r\n  for (let index = 0; index < data.result.length; index += 1) {\r\n    const li = document.createElement('li');\r\n    li.innerText = `${data.result[index].user}: ${data.result[index].score}`;\r\n    ul.append(li);\r\n  }\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (refreshFunc);\r\n\n\n//# sourceURL=webpack://Leaderboard/./src/modules/refresh.js?");
 
 /***/ })
 

@@ -14,17 +14,19 @@
           <h2>Recent scores</h2>
         </label>
         <input type="button" value="Refresh" name="refresh" id="refresh"/>
-        <ul>
+        <ul id="list-ul">
           <!-- This part generates automatiaclly at runtime -->
         </ul>
       </section>
       <section class="right-container">
+        <form action="">
         <h2>Add your score</h2>
-        <input type="text" placeholder="Your name" />
+        <input type="text" placeholder="Your name" required class="input-text"/>
         <br />
-        <input type="text" placeholder="Your score" />
+        <input type="text" placeholder="Your score" required class="input-text"/>
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
+      </form>
       </section>
     </section>
     <script src="../dist/main.js"></script>
