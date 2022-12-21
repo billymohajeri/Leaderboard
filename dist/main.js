@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\n\n\n//# sourceURL=webpack://Leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\r\n\r\n// const refreshFunc= fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EeYWP4zCOnVuHLR8pvoH/scores'), {\r\n//       method: 'GET',\r\n//       headers: {\r\n//         'Content-Type': 'application/json',\r\n//       },\r\n//         body: JSON.stringify(data)\r\n//     });\r\n\r\nasync function getResponse() {\r\n    console.log('tst');\r\n  const response = await fetch(\r\n    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EeYWP4zCOnVuHLR8pvoH/scores',\r\n    {\r\n      method: 'GET',\r\n      headers: {\r\n        'Content-type': 'application/json; charset=UTF-8',\r\n      },\r\n    }\r\n  );\r\n  const data = await response.json();\r\n  console.log('dataaaaaaaaa: ', data);\r\n}\r\n\r\n// const refreshBtn = document.getElementById('refresh');\r\n\r\nrefreshBtn.addEventListener('click', () => {\r\n  //   let result = refreshFunc();\r\n  //   makeList(result);\r\n  getResponse();\r\n});\r\n\r\n// const makeList=aync()=>{\r\n//     let a=await refreshFunc();\r\n//     console.log(a);\r\n// }\r\n\n\n//# sourceURL=webpack://Leaderboard/./src/index.js?");
 
 /***/ })
 
