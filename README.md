@@ -88,14 +88,6 @@ In order to run this project you need:
 
 - Code Editor: VS Code
 - Web Browser
-<!--
-Example command:
-
-```sh
- gem install rails
-```
-
--->
 
 <!-- ### Setup -->
 
