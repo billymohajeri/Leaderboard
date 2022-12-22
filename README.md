@@ -33,6 +33,10 @@
 
 **Leaderboard** The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
+<div align="center">
+
+  <img src="./app-screenshot.png" alt="app-screenshot" width="140"  height="auto" />
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
