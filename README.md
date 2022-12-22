@@ -35,7 +35,8 @@
 
 <div align="center">
 
-  <img src="./app-screenshot.png" alt="app-screenshot" width="140"  height="auto" />
+  <img src="./app-screenshot.png" alt="app-screenshot" width="auto"  height="auto" />
+  </div>
 
 ## 🛠 Built With <a name="built-with"></a>
 
