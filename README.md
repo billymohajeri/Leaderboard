@@ -33,6 +33,11 @@
 
 **Leaderboard** The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
+<div align="center">
+
+  <img src="./app-screenshot.png" alt="app-screenshot" width="auto"  height="auto" />
+  </div>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -83,14 +88,6 @@ In order to run this project you need:
 
 - Code Editor: VS Code
 - Web Browser
-<!--
-Example command:
-
-```sh
- gem install rails
-```
-
--->
 
 <!-- ### Setup -->
 

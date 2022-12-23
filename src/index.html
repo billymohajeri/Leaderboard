@@ -10,23 +10,35 @@
     <h1>Leaderboard</h1>
     <section class="container">
       <section class="left-container">
-        <label for="refresh">
-          <h2>Recent scores</h2>
-        </label>
-        <input type="button" value="Refresh" name="refresh" id="refresh"/>
+        <h2>Recent scores</h2>
         <ul id="list-ul">
           <!-- This part generates automatiaclly at runtime -->
         </ul>
+        <input
+          type="button"
+          value="Refresh"
+          name="refresh"
+          id="refresh"
+          class="btn"
+        />
       </section>
       <section class="right-container">
         <form action="">
-        <h2>Add your score</h2>
-        <input type="text" placeholder="Your name" required class="input-text"/>
-        <br />
-        <input type="text" placeholder="Your score" required class="input-text"/>
-        <br />
-        <button type="submit" id="submit">Submit</button>
-      </form>
+          <h2>Add your score</h2>
+          <input
+            type="text"
+            placeholder="Your name"
+            required
+            class="input-text"
+          />
+          <input
+            type="text"
+            placeholder="Your score"
+            required
+            class="input-text"
+          />
+          <button type="submit" id="submit" class="btn">Submit</button>
+        </form>
       </section>
     </section>
     <script src="../dist/main.js"></script>
