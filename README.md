@@ -89,14 +89,6 @@ To run tests, run the following command: -->
 
 You can deploy this project using: -->
 
-<!--
-Example:
-
-```sh
-
-```
- -->
-
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
