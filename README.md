@@ -85,10 +85,6 @@ To run the project, execute the following command: -->
 
 To run tests, run the following command: -->
 
-<!-- ### Deployment
-
-You can deploy this project using: -->
-
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
