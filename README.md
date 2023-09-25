@@ -68,15 +68,6 @@ In order to run this project you need:
 - Code Editor: VS Code
 - Web Browser
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
 <!-- ### Usage
 
 To run the project, execute the following command: -->
