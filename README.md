@@ -68,10 +68,6 @@ In order to run this project you need:
 - Code Editor: VS Code
 - Web Browser
 
-<!-- ### Usage
-
-To run the project, execute the following command: -->
-
 <!-- ### Run tests
 
 To run tests, run the following command: -->
