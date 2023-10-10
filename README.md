@@ -2,8 +2,6 @@
 
 <h3><b>Leaderboard</b></h3>
 
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
